@@ -39,7 +39,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_COLEMAK_DHM] =
   LAYOUT(
          KC_ESC,  KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,   /**/    KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN, KC_MINS, KC_QUOT,
-         KC_TAB,   KC_A,    KC_R,    KC_S,    KC_T,    KC_G,  /**/     KC_M,    KC_N,    KC_E,    KC_I,    KC_O,        KC_ENT,
+         MT(MOD_LCTL, KC_TAB),   KC_A,    KC_R,    KC_S,    KC_T,    KC_G,  /**/     KC_M,    KC_N,    KC_E,    KC_I,    KC_O,        KC_ENT,
          KC_LSPO,     KC_Z,    KC_X,    KC_C,    KC_D,    KC_V, /**/     KC_K,    KC_H,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSPC,
          KC_LCHO, OSM(MOD_LALT), KC_LGUI, KC_NAV, KC_BSFN1,     /**/    KC_SPFN2,      OSM(MOD_RALT), KC_RGUI, KC_FN3,  KC_RCBS
         ),
@@ -47,7 +47,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_COLEMAK_DH_ANSI] =
   LAYOUT(
          KC_ESC,  KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,   /**/    KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN, KC_MINS, KC_QUOT,
-         KC_TAB,   KC_A,    KC_R,    KC_S,    KC_T,    KC_G,  /**/     KC_K,    KC_N,    KC_E,    KC_I,    KC_O,        KC_ENT,
+         MT(MOD_LCTL, KC_TAB),   KC_A,    KC_R,    KC_S,    KC_T,    KC_G,  /**/     KC_K,    KC_N,    KC_E,    KC_I,    KC_O,        KC_ENT,
          KC_LSPO,     KC_X,    KC_C,    KC_D,    KC_V,    KC_Z, /**/     KC_M,    KC_H,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSPC,
          KC_LCHO, OSM(MOD_LALT), KC_LGUI, KC_NAV, KC_BSFN1,     /**/    KC_SPFN2,      OSM(MOD_RALT), KC_RGUI, KC_FN3,  KC_RCBS
         ),
@@ -55,7 +55,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_QWERTY] =
   LAYOUT(
          KC_ESC,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,   /**/  KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_MINS, KC_QUOT,
-         KC_TAB,   KC_A,    KC_S,    KC_D,    KC_F,    KC_G,  /**/   KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN,     KC_ENT,
+         MT(MOD_LCTL, KC_TAB),   KC_A,    KC_S,    KC_D,    KC_F,    KC_G,  /**/   KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN,     KC_ENT,
          KC_LSPO,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B, /**/   KC_N,     KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSPC,
          KC_LCHO, OSM(MOD_LALT), KC_LGUI, KC_NAV,  KC_BSFN1,   /**/       KC_SPFN2,                  OSM(MOD_RALT), KC_RGUI, KC_FN3,  KC_RCBS
          ),
@@ -71,7 +71,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_FN2] =
   LAYOUT(
          KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,  /**/ KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_UNDS, KC_PLUS,
-         RESET,    _______, KC_PSCR, KC_INS,  _______, KC_HOME,  /**/ _______, _______, _______, _______, KC_DQUO,     _______,
+         RESET,    _______, KC_PSCR, KC_INS,  KC_DEL, KC_HOME,  /**/ _______, _______, _______, _______, KC_DQUO,     _______,
          _______,    KC_PAUS, KC_SLCK, KC_DEL,  _______, KC_END,   /**/  _______,  _______, _______, _______, _______, _______,
          _______, _______, _______, _______, KC_DEL,             /**/ _______,          _______, _______, _______, _______
          ),
