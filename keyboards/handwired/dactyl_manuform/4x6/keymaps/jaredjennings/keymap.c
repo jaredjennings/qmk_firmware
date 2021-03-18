@@ -154,8 +154,8 @@ LAYOUT(
 
 [_NAV] =
 LAYOUT(
-       ____, ____, ____, KC_MS_U, ____, KC_ACL2,     /**/        ____, KC_CT_L, KC_UP, KC_CT_R, ____, ____, \
-       ____, ____, KC_MS_L, KC_MS_D, KC_MS_R, KC_ACL1, /**/      KC_HOME, KC_LEFT, KC_DOWN, KC_RIGHT, KC_END, ____, \
+       ____, ____, ____, KC_MS_U, ____, KC_ACL2,     /**/        ____, KC_HOME, KC_UP, KC_DOWN, KC_END, ____, \
+       ____, ____, KC_MS_L, KC_MS_D, KC_MS_R, KC_ACL1, /**/      ____, KC_CT_L, KC_LEFT, KC_RIGHT, KC_CT_R, ____, \
        ____, ____, KC_WH_U, KC_WH_D, ____, KC_ACL0,    /**/      ____, ____, KC_PGUP, KC_PGDN, ____, ____, \
        ____, ____, /**/ ____, ____,
        KC_MS_BTN1, KC_MS_BTN2, /**/ ____, ____,
